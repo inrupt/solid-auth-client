@@ -30,9 +30,7 @@ var NAMESPACE = 'solid-auth-client';
  * Receives and handles remote procedure calls.
  */
 
-export var Server =
-/*#__PURE__*/
-function () {
+export var Server = /*#__PURE__*/function () {
   function Server(clientWindow, clientOrigin, handle) {
     var _this = this;
 
@@ -58,9 +56,7 @@ function () {
   _createClass(Server, [{
     key: "_handleMessage",
     value: function () {
-      var _handleMessage2 = _asyncToGenerator(
-      /*#__PURE__*/
-      _regeneratorRuntime.mark(function _callee(_ref) {
+      var _handleMessage2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime.mark(function _callee(_ref) {
         var data, origin, req, _ref2, id, method, _args, ret;
 
         return _regeneratorRuntime.wrap(function _callee$(_context) {
@@ -130,9 +126,7 @@ function () {
  * Makes remote procedure calls.
  */
 
-export var Client =
-/*#__PURE__*/
-function () {
+export var Client = /*#__PURE__*/function () {
   function Client(serverWindow, serverOrigin) {
     _classCallCheck(this, Client);
 

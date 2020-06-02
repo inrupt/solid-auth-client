@@ -18,9 +18,7 @@ export function getData(_x) {
  */
 
 function _getData() {
-  _getData = _asyncToGenerator(
-  /*#__PURE__*/
-  _regeneratorRuntime.mark(function _callee(store) {
+  _getData = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime.mark(function _callee(store) {
     var serialized, data;
     return _regeneratorRuntime.wrap(function _callee$(_context) {
       while (1) {
@@ -64,9 +62,7 @@ export function updateStorage(_x2, _x3) {
  */
 
 function _updateStorage() {
-  _updateStorage = _asyncToGenerator(
-  /*#__PURE__*/
-  _regeneratorRuntime.mark(function _callee2(store, update) {
+  _updateStorage = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime.mark(function _callee2(store, update) {
     var currentData, newData;
     return _regeneratorRuntime.wrap(function _callee2$(_context2) {
       while (1) {
