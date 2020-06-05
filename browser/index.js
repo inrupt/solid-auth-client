@@ -208,10 +208,10 @@ class SolidAuthClient extends events__WEBPACK_IMPORTED_MODULE_1___default.a {
   async currentSession(storage) {
     const authFetcher = await this.getAuthFetcher(storage);
     const newSession = await authFetcher.getSession();
-    return {
+    return newSession ? {
       webId: newSession.webId,
       sessionKey: newSession.localUserId
-    };
+    } : null;
   }
 
   async trackSession(callback, storage) {

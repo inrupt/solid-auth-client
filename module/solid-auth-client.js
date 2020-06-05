@@ -209,10 +209,10 @@ var SolidAuthClient = /*#__PURE__*/function (_EventEmitter) {
 
               case 5:
                 newSession = _context5.sent;
-                return _context5.abrupt("return", {
+                return _context5.abrupt("return", newSession ? {
                   webId: newSession.webId,
                   sessionKey: newSession.localUserId
-                });
+                } : null);
 
               case 7:
               case "end":
