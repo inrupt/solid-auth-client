@@ -72,10 +72,12 @@ export default class SolidAuthClient extends EventEmitter {
   async currentSession(storage?: AsyncStorage): Promise<?Session> {
     const authFetcher = await this.getAuthFetcher(storage)
     const newSession = await authFetcher.getSession()
-    return {
-      webId: newSession.webId,
-      sessionKey: newSession.localUserId
-    }
+    return newSession
+      ? {
+          webId: newSession.webId,
+          sessionKey: newSession.localUserId
+        }
+      : null
   }
 
   async trackSession(
