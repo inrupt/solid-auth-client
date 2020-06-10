@@ -38,9 +38,7 @@ export default class IdpSelect extends React.Component {
     }
     const loginOptions = {
       ...(await this.getClient().request('getLoginOptions')),
-      storage: this.getStorage(),
-      // TODO: remove this once the idp is solid compliant
-      clientName: 'coolApp'
+      storage: this.getStorage()
     }
     await auth.login(idp, loginOptions)
   }

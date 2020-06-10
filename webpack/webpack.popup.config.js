@@ -36,7 +36,7 @@ module.exports = {
   },
   plugins: [
     new EnvironmentPlugin({
-      'APP_NAME': '',
+      APP_NAME: ''
     }),
     new CleanWebpackPlugin([outputDir]),
     new HtmlWebpackPlugin({
