@@ -55,7 +55,7 @@
     "@babel/runtime": "^7.0.0",
     "@solid/oidc-rp": "^0.8.0",
     "auth-header": "^1.0.0",
-    "commander": "^2.11.0",
+    "commander": "^2.20.3",
     "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
